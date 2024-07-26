@@ -36,6 +36,7 @@ console.log(content);
       }
     }
     fetchContent();
+    // eslint-disable-next-line
   }, [window.location.pathname]);
   
   // If no page is found, return 
