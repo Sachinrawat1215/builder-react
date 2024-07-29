@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
 
 // Put your API key here
-builder.init("d2349af7b22141e39fed793158ada9ef");
+builder.init("80052318ebce437386e217938e41a56f");
 
 // set whether you're using the Visual Editor,
 // whether there are changes,
@@ -21,7 +21,7 @@ export default function CatchAllRoute() {
   useEffect(() => {
     async function fetchContent() {
       const content = await builder
-        .get("privacy", {
+        .get("contact", {
           url: window.location.pathname
         })
         .promise();
@@ -51,7 +51,7 @@ console.log(content);
   return (
     <>
       {/* Render the Builder page */}
-      <BuilderComponent model="privacy" content={content} />
+      <BuilderComponent model="contact" content={content} />
     </>
   );
 }
