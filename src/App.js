@@ -21,7 +21,7 @@ export default function CatchAllRoute() {
   useEffect(() => {
     async function fetchContent() {
       const content = await builder
-        .get("home", {
+        .get("privacy", {
           url: window.location.pathname
         })
         .promise();
@@ -51,7 +51,7 @@ console.log(content);
   return (
     <>
       {/* Render the Builder page */}
-      <BuilderComponent model="page" content={content} />
+      <BuilderComponent model="privacy" content={content} />
     </>
   );
 }

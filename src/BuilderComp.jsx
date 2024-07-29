@@ -20,7 +20,7 @@ export default function CatchAllRoute() {
       try {
         console.log("Fetching content for:", window.location.pathname);
         const content = await builder
-          .get("page", {
+          .get("privacy", {
             url: window.location.pathname,
           })
           .promise();
@@ -46,7 +46,7 @@ export default function CatchAllRoute() {
   return (
     <>
       {/* Render the Builder page */}
-      <BuilderComponent model="page" content={content} />
+      <BuilderComponent model="privacy" content={content} />
     </>
   );
 }
