@@ -51,7 +51,7 @@ console.log(content);
   return (
     <>
       {/* Render the Builder page */}
-      <h1>Okay Bro</h1>
+      <h1>Hello World</h1>
       <BuilderComponent model="contact" content={content} />
     </>
   );
